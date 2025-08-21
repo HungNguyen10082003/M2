@@ -3,9 +3,9 @@ package ss7;
 public class RunColorable {
     public static void main(String[] args) {
         Object[] shapes = {
-                new Square(5),
+                new Square(7),
                 new Rectangle(3, 4),
-                new Circle(2) // Không triển khai Colorable
+                new Circle(2) //
         };
 
         for (Object shape : shapes) {
