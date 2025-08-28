@@ -1,6 +1,7 @@
 package ss8_mvc.controller;
 
 import java.util.Scanner;
+import ss8_mvc.controller.StudentController;
 
 public class MainController {
     public static void displayMenu() {
@@ -18,7 +19,7 @@ public class MainController {
             switch (choice) {
                 case 1:
                     System.out.println("Chức năng quản lý sinh viên");
-                    StudentController.displayMenu();
+                    ss8_mvc.controller.StudentController.displayMenu();
                     break;
                 case 2:
                     System.out.println("Chức năng quản lý giáo viên");
