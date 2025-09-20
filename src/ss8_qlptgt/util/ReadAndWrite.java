@@ -8,7 +8,7 @@ import java.util.List;
 public class ReadAndWrite {
     public static void writeListStringToCSV(String filePath, List<String> list, boolean append) throws IOException {
         File file = new File(filePath);
-        file.getParentFile().mkdirs(); // tạo thư mục nếu chưa có
+        file.getParentFile().getPath();
         try (FileWriter fw = new FileWriter(file, append);
              BufferedWriter bw = new BufferedWriter(fw)) {
             for (String line : list) {
@@ -32,7 +32,7 @@ public class ReadAndWrite {
         return rs;
     }
 
-    /** Split CSV cơ bản, hỗ trợ trường có ngoặc kép và dấu phẩy */
+
     // ReadAndWriteFile.java
     public static String[] splitCsvSmart(String line, int expectedCols) {
         if (line == null) return new String[Math.max(0, expectedCols)];
@@ -82,7 +82,6 @@ public class ReadAndWrite {
             }
         }
 
-        // Bóc ngoặc kép ngoài và unescape ""
         for (int i = 0; i < fields.size(); i++) {
             String f = fields.get(i);
             if (f.length() >= 2 && f.startsWith("\"") && f.endsWith("\"")) {

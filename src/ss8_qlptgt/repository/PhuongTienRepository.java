@@ -13,14 +13,13 @@ public class PhuongTienRepository implements IPhuongTienRepository {
     private final List<OTo> oTo = new ArrayList<>();
     private final List<XeMay> xeMay = new ArrayList<>();
 
-    private final String DATA_DIR = "data";
-    private final String HANG_FILE = DATA_DIR + "/hang_sx.csv";
-    private final String XE_TAI_FILE = DATA_DIR + "/xe_tai.csv";
-    private final String O_TO_FILE   = DATA_DIR + "/o_to.csv";
-    private final String XE_MAY_FILE = DATA_DIR + "/xe_may.csv";
+    private final String DATA_DIR = "src/ss8_qlptgt/data/text.csv";
+    private final String HANG_FILE = DATA_DIR + "src/ss8_qlptgt/data/hang_sx.csv";
+    private final String XE_TAI_FILE = DATA_DIR + "src/ss8_qlptgt/data/xe_tai.csv";
+    private final String O_TO_FILE   = DATA_DIR + "src/ss8_qlptgt/data/o_to.csv";
+    private final String XE_MAY_FILE = DATA_DIR + "src/ss8_qlptgt/data/xe_may.csv";
 
     public PhuongTienRepository() {
-        // có thể seed mặc định sau khi load nếu rỗng
     }
 
     // ---------- HANG ----------
@@ -91,7 +90,8 @@ public class PhuongTienRepository implements IPhuongTienRepository {
                     new HangSanXuat("H02", "Hyundai", "Hàn Quốc"),
                     new HangSanXuat("H03", "Ford", "Mỹ"),
                     new HangSanXuat("H04", "VinFast", "Việt Nam"),
-                    new HangSanXuat("H05", "Honda", "Nhật Bản")
+                    new HangSanXuat("H05", "Honda", "Nhật Bản"),
+                    new HangSanXuat("H06", "Mercedec","Đức")
             ));
         }
 
