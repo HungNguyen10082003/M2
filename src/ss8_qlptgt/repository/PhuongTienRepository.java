@@ -22,7 +22,6 @@ public class PhuongTienRepository implements IPhuongTienRepository {
     public PhuongTienRepository() {
     }
 
-    // ---------- HANG ----------
 
     @Override public List<HangSanXuat> getHangSanXuat() { return hangSanXuat; }
 
@@ -40,19 +39,18 @@ public class PhuongTienRepository implements IPhuongTienRepository {
         hangSanXuat.add(h);
     }
 
-    // ---------- ADD ----------
 
     @Override public void addXeTai(XeTai x) { xeTai.add(x); upsertHang(x.getHang()); }
     @Override public void addOTo(OTo x)     { oTo.add(x);   upsertHang(x.getHang()); }
     @Override public void addXeMay(XeMay x) { xeMay.add(x); upsertHang(x.getHang()); }
 
-    // ---------- GET LIST ----------
+
 
     @Override public List<XeTai> getXeTai() { return xeTai; }
     @Override public List<OTo> getOTo() { return oTo; }
     @Override public List<XeMay> getXeMay() { return xeMay; }
 
-    // ---------- DELETE ----------
+
 
     @Override
     public boolean deleteByBks(String bks) {
@@ -62,7 +60,6 @@ public class PhuongTienRepository implements IPhuongTienRepository {
         return a || b || c;
     }
 
-    // ---------- SEARCH ----------
 
     @Override
     public List<PhuongTienEntity> searchLikeBks(String keyword) {
@@ -74,7 +71,6 @@ public class PhuongTienRepository implements IPhuongTienRepository {
         return rs;
     }
 
-    // ---------- IO ----------
 
     @Override
     public void loadFromDisk() throws Exception {

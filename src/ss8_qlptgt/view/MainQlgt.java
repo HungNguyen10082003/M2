@@ -4,7 +4,7 @@ import ss8_qlptgt.controller.PhuongTienController;
 import ss8_qlptgt.repository.PhuongTienRepository;
 import ss8_qlptgt.service.PhuongTienService;
 
-public class Main {
+public class MainQlgt {
     public static void main(String[] args) {
         PhuongTienRepository repo = new PhuongTienRepository();
         PhuongTienService service = new PhuongTienService(repo);

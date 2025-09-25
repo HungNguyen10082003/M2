@@ -57,7 +57,7 @@ public class PhuongTienController {
                 }
                 case 2: {
                     int cho = Integer.parseInt(view.input("Số chỗ ngồi"));
-                    String kieu = view.input("Kiểu xe (du lịch/xe khách/...)");
+                    String kieu = view.input("Kiểu xe");
                     service.themOTo(new OTo(bks, hang, nam, chu, cho, kieu));
                     service.save();
                     System.out.println("Đã thêm ô tô & lưu file!");
