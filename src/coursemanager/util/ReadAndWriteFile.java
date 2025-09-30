@@ -1,4 +1,4 @@
-package library.util;
+package coursemanager.util;
 
 import java.io.*;
 import java.util.ArrayList;

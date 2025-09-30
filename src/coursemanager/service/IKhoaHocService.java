@@ -1,8 +1,8 @@
-package library.service;
+package coursemanager.service;
 
 import java.util.List;
 
-public interface ITaiLieuService<T> {
+public interface IKhoaHocService<T> {
     void add(T t);
     List<T> getAll();
     boolean removeByMa(String ma);
